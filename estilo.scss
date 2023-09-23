@@ -1,0 +1,73 @@
+//paleta colores
+$color1: rgb(248, 153, 227);
+$color2:rgb(114, 69, 104);
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    & a{
+        text-decoration: none;
+        color:$color2;
+    }
+}
+
+.baner {
+    background-color: $color1 ;
+    
+    height: 320px;
+
+    & .row {
+        height: 100%;
+
+        & .baner-cont {
+            text-align: start;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color:$color2;
+
+
+            & h2 {
+                margin-top: 20px;
+            }
+
+            & p{
+                text-align: start;
+            }
+
+        }
+
+    }
+
+}
+
+.galeria{
+    text-align: center;
+    color: $color2;
+}
+
+
+
+footer{
+    background-color: $color1;
+    margin-top: 8px;
+    height: 30px;
+    text-align: center;
+    place-content: center;
+    
+    & h6{
+        font-size: 11px;
+    }
+ 
+ 
+}
+
