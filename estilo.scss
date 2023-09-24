@@ -1,73 +1,179 @@
-//paleta colores
-$color1: rgb(248, 153, 227);
-$color2:rgb(114, 69, 104);
+// Paleta de colores
+$color1: rgba(231, 181, 229, 0.904);
+$color2: rgb(88, 53, 81);
+$color3: rgba(255, 255, 255, 0.9);
+$color4: rgba(0, 0, 0, 0);
 
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+//fuentes
+$font1: "Comic Sans MS", cursive, sans-serif;;
+
+//mixin
+@mixin font-aling($font-size , $text-aling ) {
+    font-size: $font-size;
+    text-align: $text-aling;
+
 }
 
-.navbar{
-    background-color: white;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: $color3;
+}
+
+.navbar {
+    background-color: $color1;
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 1000;
-    & a{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+
+    a {
         text-decoration: none;
-        color:$color2;
+        color: $color2;
+    }
+    a:hover{
+        color:rgb(58, 34, 53) ;
     }
 }
 
 .baner {
-    background-color: $color1 ;
-    
-    height: 320px;
 
-    & .row {
+    font-family: $font1;
+
+    margin-top: 1px;
+    background-color: $color1;
+    height: 250px;
+
+    .row {
+        padding: 10px;
         height: 100%;
 
-        & .baner-cont {
-            text-align: start;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color:$color2;
+        .baner-cont {
+            text-align: center;
+            margin-top: 20px;
+            color: $color2;
 
-
-            & h2 {
+            h2 {
+                @include font-aling(20px, start);
                 margin-top: 20px;
             }
 
-            & p{
+            p {
                 text-align: start;
             }
+            
 
+        }
+
+        .nright {
+            background: $color4 url(../img/carrusel4.png) center center/contain no-repeat;
+        }
+    }
+}
+
+.galeria {
+    color: $color2;
+    background-color: $color4;
+    @include font-aling(17px, center)
+}
+
+.carousel {
+    margin-top: 8px;
+}
+
+footer {
+    background-color: $color1;
+    margin-top: 8px;
+    height: 60px;
+    text-align: center;
+    place-content: center;
+
+    .red-social {
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 3px;
+
+        .fa-instagram {
+            margin-left: 3px;
+        }
+    }
+
+    h6 {
+        color: $color2;
+        padding-top: 5px;
+        font-size: 11px;
+    }
+}
+
+
+
+@media screen and (min-width:480px) and (max-width:759px) {
+    .baner-cont {
+        margin-top: 10px;
+
+        h2 {
+            @include font-aling(35px, start)
+        }
+
+        p {
+            @include font-aling(20px, start)
         }
 
     }
 
 }
 
-.galeria{
-    text-align: center;
-    color: $color2;
-}
+@media screen and (min-width:760px) and (max-width:1023px) {
+    .baner-cont {
 
+        h2 {
+            @include font-aling(40px, start)
+        }
 
-
-footer{
-    background-color: $color1;
-    margin-top: 8px;
-    height: 30px;
-    text-align: center;
-    place-content: center;
-    
-    & h6{
-        font-size: 11px;
+        p {
+            @include font-aling(24px, start)
+        }
     }
- 
- 
 }
 
+@media screen and (min-width:1024px) {
+
+    .baner {
+        height: 400px;
+
+        .row {
+            .baner-cont {
+                margin-top: 40px;
+
+                h2 {
+                    @include font-aling (50px, start)
+                }
+
+                p {
+                    @include font-aling(27px, start)
+                }
+            }
+
+        }
+    }
+
+    .carousel {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: $color3;
+
+        .carousel-inner {
+            transition: 0.2s;
+            place-items: center;
+            width: 74%;
+
+        }
+    }
+
+}

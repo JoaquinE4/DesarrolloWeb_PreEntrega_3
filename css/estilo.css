@@ -1,56 +1,136 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
 .navbar {
-  background-color: white;
+  background-color: rgba(231, 181, 229, 0.904);
   position: sticky;
-  top: 0px;
+  top: 0;
   z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 .navbar a {
   text-decoration: none;
-  color: rgb(114, 69, 104);
+  color: rgb(88, 53, 81);
+}
+.navbar a:hover {
+  color: rgb(58, 34, 53);
 }
 
 .baner {
-  background-color: rgb(248, 153, 227);
-  height: 320px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-top: 1px;
+  background-color: rgba(231, 181, 229, 0.904);
+  height: 250px;
 }
 .baner .row {
+  padding: 10px;
   height: 100%;
 }
 .baner .row .baner-cont {
-  text-align: start;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: rgb(114, 69, 104);
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(88, 53, 81);
 }
 .baner .row .baner-cont h2 {
+  font-size: 20px;
+  text-align: start;
   margin-top: 20px;
 }
 .baner .row .baner-cont p {
   text-align: start;
 }
+.baner .row .nright {
+  background: rgba(0, 0, 0, 0) url(../img/carrusel4.png) center center/contain no-repeat;
+}
 
 .galeria {
+  color: rgb(88, 53, 81);
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 17px;
   text-align: center;
-  color: rgb(114, 69, 104);
+}
+
+.carousel {
+  margin-top: 8px;
 }
 
 footer {
-  background-color: rgb(248, 153, 227);
+  background-color: rgba(231, 181, 229, 0.904);
   margin-top: 8px;
-  height: 30px;
+  height: 60px;
   text-align: center;
   place-content: center;
 }
+footer .red-social {
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+footer .red-social .fa-instagram {
+  margin-left: 3px;
+}
 footer h6 {
+  color: rgb(88, 53, 81);
+  padding-top: 5px;
   font-size: 11px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 759px) {
+  .baner-cont {
+    margin-top: 10px;
+  }
+  .baner-cont h2 {
+    font-size: 35px;
+    text-align: start;
+  }
+  .baner-cont p {
+    font-size: 20px;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 1023px) {
+  .baner-cont h2 {
+    font-size: 40px;
+    text-align: start;
+  }
+  .baner-cont p {
+    font-size: 24px;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .baner {
+    height: 400px;
+  }
+  .baner .row .baner-cont {
+    margin-top: 40px;
+  }
+  .baner .row .baner-cont h2 {
+    font-size: 50px;
+    text-align: start;
+  }
+  .baner .row .baner-cont p {
+    font-size: 27px;
+    text-align: start;
+  }
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .carousel .carousel-inner {
+    transition: 0.2s;
+    place-items: center;
+    width: 74%;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
