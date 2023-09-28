@@ -134,6 +134,11 @@ body {
   text-align: center;
 }
 
+.contacto-title {
+  margin-top: 20px;
+  text-align: center;
+}
+
 .contacto {
   height: 600px;
   width: 100%;
@@ -145,6 +150,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+.contacto .contacto-form .form-title {
+  margin-bottom: 20px;
 }
 .contacto .contacto-form .email {
   cursor: pointer;
@@ -168,12 +176,46 @@ body {
   justify-content: center;
   align-items: baseline;
   height: 100%;
+  margin-bottom: 70px;
 }
 .contacto .contacto-red .redes {
   text-align: center;
 }
-.contacto .contacto-red .redes ul {
-  margin: 0;
+.contacto .contacto-red .redes .redes-title {
+  margin-bottom: 30px;
+}
+.contacto .contacto-red .redes .list-unstyled {
+  margin-top: 100px;
+}
+.contacto .contacto-red .redes .list-unstyled li a {
+  text-decoration: none;
+  color: rgb(88, 66, 53);
+}
+
+.formas-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.formas-pago {
+  text-align: center;
+  height: 1100px;
+}
+.formas-pago .cuadros-pago {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 400px;
+  margin-bottom: 50px;
+}
+.formas-pago .cuadros-pago .cuadros {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 39%;
 }
 
 footer {
@@ -219,6 +261,15 @@ footer h6 {
     align-items: center;
     justify-content: center;
   }
+  .contacto .redes {
+    margin-top: 65px;
+  }
+  .cuadros-pago {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 992px) {
   .baner {
@@ -242,6 +293,19 @@ footer h6 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+  }
+  .contacto .redes {
+    margin-top: 110px;
+  }
+  .contacto .redes .list-unstyled {
+    font-size: 20px;
+  }
+  .cuadros-pago {
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
 

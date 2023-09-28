@@ -173,6 +173,11 @@ body {
     @include font-align(17px, center);
 }
 
+.contacto-title{
+    margin-top: 20px;
+    text-align: center;
+}
+
 .contacto {
     height: 600px;
     width: 100%;
@@ -184,6 +189,10 @@ body {
         justify-content: center; // Centra horizontalmente
         align-items: center; // Centra verticalmente
         height: 100%;
+
+        .form-title{
+            margin-bottom: 20px;
+        }
 
 
         .email {
@@ -207,17 +216,26 @@ body {
     }
 
     .contacto-red {
+
         display: flex;
         justify-content: center;  
-         align-items: baseline;
-        height: 100%; // Asegúrate de que el contenedor tenga una altura, o podría no centrarse verticalmente
-
+        align-items: baseline;
+        height: 100%;  
+        margin-bottom: 70px;
         .redes {
-            text-align: center; // Esto centra el contenido de texto del bloque .redes
+            text-align: center;  
+            .redes-title{
+                margin-bottom: 30px;
+            }
 
-            ul {
-                margin: 0;
-                // Elimina márgenes para una verdadera centralización
+
+            .list-unstyled {
+                margin-top: 100px;
+                li a{
+                    
+                    text-decoration: none;
+                    color: $color2;
+                }
             }
         }
     }
@@ -225,6 +243,33 @@ body {
 
 }
 
+.formas-title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.formas-pago{
+    text-align: center;
+    height: 1100px;
+
+    .cuadros-pago{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        gap:30px;
+        height: 400px;
+        margin-bottom: 50px;
+        .cuadros{
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 200px;
+            width: 200px;
+            border-radius: 39%;
+        }
+    }
+
+}
 
 
 footer {
@@ -280,6 +325,15 @@ footer {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        .redes{
+            margin-top: 65px;
+        }
+    }
+    .cuadros-pago{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items:center;
     }
 
 }
@@ -315,5 +369,24 @@ footer {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        .redes{
+            margin-top: 110px;
+             
+            .list-unstyled{
+                font-size: 20px;
+
+            }
+                
+            
+        }
     }
+
+    .cuadros-pago{
+        height: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        align-items:center;
+    }
+    
 }

@@ -54,14 +54,15 @@
         <div class="col-md-6 contacto-red">
             <div class="redes">
                 <h2 class="redes-title">Redes Sociales</h2>
-                <ul class="list-unstyled"> 
+                <ul class="list-unstyled">
                     <li>
-                        <a href="https://www.instagram.com/tu_nombre_de_usuario/" target="_blank">
+                        <a href="#" target="_blank">
                             <i class="fab fa-instagram"></i> Instagram
                         </a>
                     </li>
+                    <br>
                     <li>
-                        <a href="https://www.facebook.com/tu_nombre_de_usuario/" target="_blank">
+                        <a href="#" target="_blank">
                             <i class="fab fa-facebook-f"></i> Facebook
                         </a>
                     </li>
@@ -69,7 +70,7 @@
             </div>
         </div>
         <form class="col-md-6 contacto-form ">
-            <h2>Deja tu mensaje</h2>
+            <h2 class="form-title">Deja tu mensaje</h2>
             <div class="form-floating mb-3 w-75">
                 <input class="form-control" id="email" type="email" placeholder="Email"
                     data-sb-validations="email,required" />
@@ -77,36 +78,27 @@
                 <div class="invalid-feedback" data-sb-feedback="email:required">
                     Email es requerido.
                 </div>
-                <div class="invalid-feedback" data-sb-feedback="email:email">
-                    Email Email no es valido.
-                </div>
+
             </div>
             <div class="form-floating mb-3 w-75">
                 <textarea class="form-control" id="mensaje" type="text" placeholder="Mensaje" style="height: 10rem"
                     data-sb-validations="required"></textarea>
                 <label for="mensaje">Mensaje</label>
-                <div class="invalid-feedback" data-sb-feedback="mensaje:required">
-                    Mensaje es requerido.
-                </div>
+
             </div>
             <div class="d-none" id="submitSuccessMessage">
-                <div class="text-center mb-3">
-                    <div class="fw-bolder">Form submission successful!</div>
-                    <p>To activate this form, sign up at</p>
-                    <a
-                        href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                </div>
+
             </div>
-      
-                <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">
-                   Enviar
-                </button>
+
+            <button class="btn btn-primary btn-lg " id="submitButton" type="submit">
+                Enviar
+            </button>
             </div>
         </form>
     </sectioin>
 
-     <!--footer-->
-     <footer class="col-12">
+    <!--footer-->
+    <footer class="col-12">
         <div class="red-social col-12 justify-content-center">
             <a href="#"><i class="fa-brands fa-instagram" style="color: #724568;"></i></a>
             <a href="#"><i class="fa-brands fa-facebook" style="color: #724568;"></i></a>
